@@ -101,3 +101,7 @@ h4 {
     
     .lessonArea { visibility: hidden; z-index: -9999;}
 }
+@media screen and (max-height: 680px) { 
+    
+    .lessonArea { visibility: hidden; z-index: -9999;}
+}
