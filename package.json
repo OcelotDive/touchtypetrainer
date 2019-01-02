@@ -1,0 +1,31 @@
+{
+  "name": "touchtype",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://ocelotdive.github.io/touchtype",
+  "dependencies": {
+    "create-react-native-app": "^2.0.2",
+    "gh-pages": "^2.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-lorem-component": "^0.13.0",
+    "react-native": "^0.57.2",
+    "react-native-elements": "^1.0.0-beta6",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

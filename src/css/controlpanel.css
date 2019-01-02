@@ -1,0 +1,40 @@
+
+.controlPanel {
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	top: 10px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	z-index: 9999;
+	margin-bottom: 2%;
+	
+}
+
+
+.lessonButton {
+	border-radius: 2px;
+	font-size: 16px;
+	padding: 6px 12px;
+	font-weight: 700;
+	background: #f6f7f9 !important;
+	border: solid 1px #ced0d4 !important;
+	color: #4b4f56;
+	margin-left: 5px;
+	margin-right: 5px;
+	
+	
+	
+}
+
+.lessonButton:hover {
+	background: #e9ebee ;
+
+}
+
+.lessonButton:active {
+	background: #d8dade !important;
+	border-color: #d8dade !important;
+
+}
