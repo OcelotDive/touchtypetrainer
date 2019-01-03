@@ -8,6 +8,7 @@
     "gh-pages": "^2.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-draggable": "^3.1.1",
     "react-lorem-component": "^0.13.0",
     "react-native": "^0.57.2",
     "react-native-elements": "^1.0.0-beta6",
