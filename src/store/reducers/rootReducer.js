@@ -22,7 +22,8 @@ const initState = {
     wpm: 0,
     finishShow: false,
     flagSelect1: 'usLayout flagHighlighted',
-    flagSelect2: 'ukLayout'
+    flagSelect2: 'ukLayout',
+	keyboardIsOn: true
   
 }
 
@@ -74,7 +75,8 @@ const rootReducer = (state = initState, action) => {
                     wpm: state.wpm,
                     finishShow: state.finishShow,
                     flagSelect1: state.flagSelect1,
-                    flagSelect2: state.flagSelect2
+                    flagSelect2: state.flagSelect2,
+					keyboardIsOn: state.keyboardIsOn
                    
 
                 }
@@ -189,7 +191,8 @@ const rootReducer = (state = initState, action) => {
                 wpm: state.wpm,
                 finishShow: state.finishShow,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
               
 
 
@@ -235,7 +238,8 @@ const rootReducer = (state = initState, action) => {
                     wpm: state.wpm,
                     finishShow: state.finishShow,
                     flagSelect1: state.flagSelect1,
-                    flagSelect2: state.flagSelect2
+                    flagSelect2: state.flagSelect2,
+					keyboardIsOn: state.keyboardIsOn
                   
 
 
@@ -313,7 +317,8 @@ const rootReducer = (state = initState, action) => {
                 wpm: state.wpm,
                 finishShow: state.finishShow,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
              
 
 
@@ -352,7 +357,8 @@ const rootReducer = (state = initState, action) => {
                 wpm: state.wpm,
                 finishShow: state.finishShow,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
             
 
 
@@ -391,7 +397,8 @@ const rootReducer = (state = initState, action) => {
                 wpm: state.wpm,
                 finishShow: state.finishShow,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
                
 
 
@@ -480,7 +487,8 @@ const rootReducer = (state = initState, action) => {
                 wpm: state.wpm,
                 finishShow: state.finishShow,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
             
 
 
@@ -514,7 +522,8 @@ const rootReducer = (state = initState, action) => {
                 wpm: state.wpm,
                 finishShow: state.finishShow,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
          
 
 
@@ -549,7 +558,8 @@ const rootReducer = (state = initState, action) => {
                 wpm: state.wpm,
                 finishShow: state.finishShow,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
          
 
 
@@ -585,7 +595,8 @@ const rootReducer = (state = initState, action) => {
                 wpm: state.wpm,
                 finishShow: state.finishShow,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
        
 
 
@@ -618,7 +629,8 @@ const rootReducer = (state = initState, action) => {
                 wpm: state.wpm,
                 finishShow: state.finishShow,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
         
 
 
@@ -652,7 +664,8 @@ const rootReducer = (state = initState, action) => {
                 wpm: state.wpm,
                 finishShow: state.finishShow,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
           
 
 
@@ -714,13 +727,50 @@ const rootReducer = (state = initState, action) => {
                 wpm: 0,
                 finishShow: false,
                 flagSelect1: state.flagSelect1,
-                flagSelect2: state.flagSelect2
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
+     
+            }
+			
+			case 'KEYBOARDONOFF':
+            
+         	state.keyboardIsOn = !state.keyboardIsOn;
+            
+            
+            
+      
+            
+            return {
+                capsOnOff: state.capsOnOff,
+                shiftOnOff: state.shiftOnOff,
+                currentClass: state.currentClass,
+                classChange: state.classChange,
+                currentKey: state.currentKey,
+                testString: state.testString,
+                stringLength: state.stringLength,
+                fetchText: state.fetchText,
+                letterCorrect: state.letterCorrect,
+                usedString: state.usedString,
+                activeLesson: state.activeLesson,
+                displayLessonsMenu: state.displayLessonsMenu,
+                lessonKeys: state.lessonKeys,
+                timeOn: state.timeOn,
+                intervalId: state.intervalId,
+                mistakes: state.mistakes,
+                mistakesLength: state.mistakesLength,
+                mistakesTemp: state.mistakesTemp,
+                timevalue: state.timevalue,
+                stringEnd: state.stringEnd,
+                wpm: state.wpm,
+                finishShow: state.finishShow,
+                flagSelect1: state.flagSelect1,
+                flagSelect2: state.flagSelect2,
+				keyboardIsOn: state.keyboardIsOn
      
 
 
 
             }
-
 
 			default:
             break;

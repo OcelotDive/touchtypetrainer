@@ -9,8 +9,8 @@ class Keyboard extends Component {
 	
 	
 	render() {
-			let capOnoff = this.props.capsOnOff ? 'capsLight1On' : 'capsLight1'
-		let keyboardClass = this.props.flagSelect3 === 'noLayout flagHighlighted' ? 'keyboardNone' : 'keyboard';
+			let capOnoff = this.props.capsOnOff ? 'capsLight1On' : 'capsLight1';
+			let keyboardClass = this.props.keyboardIsOn ? 'keyboard' : 'keyboardOff';
 		return (
             
 		 <div className={keyboardClass}>
@@ -32,7 +32,8 @@ class Keyboard extends Component {
 const mapStateToProps = (state) => {
 	return {
 		capsOnOff: state.capsOnOff,
-	    flagSelect3: state.flagSelect3   
+	    flagSelect3: state.flagSelect3,
+		keyboardIsOn: state.keyboardIsOn
 	}
 }
 

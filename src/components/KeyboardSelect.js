@@ -14,7 +14,10 @@ class KeyboardSelect extends Component {
 		
 		}
 	
-	
+	keyboardOnOffClick = (e) => {
+		
+		this.props.keyboardOnOff();
+	}
 	
 	
 	
@@ -22,7 +25,7 @@ class KeyboardSelect extends Component {
 	
 		let flagClass1 = this.props.flagSelect1;
 		let flagClass2 = this.props.flagSelect2;
-		
+		let hideOrShow = this.props.keyboardIsOn ? 'Hide' : 'Show';
 		
 		return (
 		
@@ -31,7 +34,14 @@ class KeyboardSelect extends Component {
 			<div className="flagContainer">
 			<div className={flagClass1} onMouseDown={this.handleFlagClick}></div>
 			<div className={flagClass2} onMouseDown={this.handleFlagClick}></div>
+			<div className="noLayout" onMouseDown={this.keyboardOnOffClick}><br/>{hideOrShow}<br/>Keyboard</div>
+		
+		
 			</div>
+			
+			
+					
+				
 		</section>
 		
 		)
@@ -43,7 +53,8 @@ const mapStateToProps = (state) => {
 		flagSelect1: state.flagSelect1,
 		flagSelect2: state.flagSelect2,
 		activeLesson: state.activeLesson,
-		lessonKeys: state.lessonKeys
+		lessonKeys: state.lessonKeys,
+		keyboardIsOn: state.keyboardIsOn
 	
 	}
 }
@@ -52,7 +63,7 @@ const mapDispatchToProps = (dispatch) => {
 	return {
         flagClick: (flag) => {dispatch({type: 'FLAGCLICK', flag: flag})},
 		startLesson: (lessonNumber,keys, code) => {dispatch({type: 'STARTLESSON', lessonNumber: lessonNumber, keys: keys, code: code})},
-		
+		keyboardOnOff: () => {dispatch({type: 'KEYBOARDONOFF'})}
 	}
 }
 
