@@ -22,7 +22,6 @@ class Lesson20Instructions extends Component {
 			<article>
 			{lesson20}
 			</article>
-			
 			</div>
 		)
 	}

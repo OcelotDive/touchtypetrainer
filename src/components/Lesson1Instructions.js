@@ -41,6 +41,7 @@ class Lesson1Instructions extends Component {
 			</div>
 			</div>
 			</div>
+            
 		)
 	}
 }
