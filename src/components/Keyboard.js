@@ -34,7 +34,6 @@ class Keyboard extends Component {
 const mapStateToProps = (state) => {
 	return {
 		capsOnOff: state.capsOnOff,
-	    flagSelect3: state.flagSelect3,
 		keyboardIsOn: state.keyboardIsOn
 	}
 }
@@ -42,8 +41,6 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 	return {
        
-	
-	
 	}
 }
 

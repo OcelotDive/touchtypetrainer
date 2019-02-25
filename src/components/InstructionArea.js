@@ -21,7 +21,6 @@ import Lesson18Instructions from './Lesson18Instructions';
 import Lesson19Instructions from './Lesson19Instructions';
 import Lesson20Instructions from './Lesson20Instructions';
 import Lesson21Instructions from './Lesson21Instructions';
-import LessonsObject from './LessonsObject';
 
 class InstructionArea extends Component {
 	
@@ -35,108 +34,129 @@ class InstructionArea extends Component {
 	
 	
 		return (
-		this.props.activeLesson === 'lesson1' ?
+		this.props.activeLesson === 'Lesson1' ?
 			
 			
 			<Lesson1Instructions />
 			:
-		this.props.activeLesson === 'lesson2' ?
+		this.props.activeLesson === 'Lesson2' ?
 			
 			<Lesson2Instructions />
 			:
-		this.props.activeLesson === 'lesson3' ?
+		this.props.activeLesson === 'Lesson3' ?
 			
 			<Lesson3Instructions />
 			:
-		this.props.activeLesson === 'lesson4' ?	
+			
+		this.props.activeLesson === 'Lesson4' ?	
 			
 			<Lesson4Instructions />
+			
+			
 			:
 			
-		this.props.activeLesson === 'lesson5' ?	
+		this.props.activeLesson === 'Lesson5' ?	
 			
 			<Lesson5Instructions />
+			
+			
 			:
 			
-		this.props.activeLesson === 'lesson6' ?	
+		this.props.activeLesson === 'Lesson6' ?	
 			
 			<Lesson6Instructions />
 			:
 			
-		this.props.activeLesson === 'lesson7' ?	
+		this.props.activeLesson === 'Lesson7' ?	
 			
 			<Lesson7Instructions />
+			
+			
 			:
 			
-		this.props.activeLesson === 'lesson8' ?	
+		this.props.activeLesson === 'Lesson8' ?	
 			
 			<Lesson8Instructions />
+			
 			:
 			
-		this.props.activeLesson === 'lesson9' ?		
+		this.props.activeLesson === 'Lesson9' ?		
 			
 			<Lesson9Instructions />
+			
 			:
 			
-		this.props.activeLesson === 'lesson10' ?
+		this.props.activeLesson === 'Lesson10' ?
 			
 			<Lesson10Instructions />
 			
 			:
 			
-		this.props.activeLesson === 'lesson11' ?
+		this.props.activeLesson === 'Lesson11' ?
 			
 			<Lesson11Instructions />
+			
 			:
 		
-		this.props.activeLesson === 'lesson12' ?
+		this.props.activeLesson === 'Lesson12' ?
 			
 			<Lesson12Instructions />
+			
+			
 			:
 			
-		this.props.activeLesson === 'lesson13' ?
+		this.props.activeLesson === 'Lesson13' ?
 			
 			<Lesson13Instructions />
+			
 			:
 			
-		this.props.activeLesson === 'lesson14' ?
+		this.props.activeLesson === 'Lesson14' ?
 			
 			<Lesson14Instructions />
+			
 			:
 		
-		this.props.activeLesson === 'lesson15' ?
+		this.props.activeLesson === 'Lesson15' ?
 			
 			<Lesson15Instructions />
+			
 			:
 			
-		this.props.activeLesson === 'lesson16' ?
+		this.props.activeLesson === 'Lesson16' ?
 			
 			<Lesson16Instructions />
+			
 			:
 		
 		this.props.activeLesson === 'lesson17' ?
 			
 			<Lesson17Instructions />
+			
 			:
 		
-		this.props.activeLesson === 'lesson18' ?
+		this.props.activeLesson === 'Lesson18' ?
 			
 			<Lesson18Instructions />
+			
 			:
 			
-		this.props.activeLesson === 'lesson19' ?
+		this.props.activeLesson === 'Lesson19' ?
 			
 			<Lesson19Instructions />
+			
 			:	
 		
-		this.props.activeLesson === 'lesson20' ?
+		this.props.activeLesson === 'Lesson20' ?
 			
 			<Lesson20Instructions />
+			
 			:
 			
-		this.props.activeLesson === 'lesson21' ?
+		this.props.activeLesson === 'Lesson21' ?
 			
 			<Lesson21Instructions />
+			
 			:
 			
 			<div className="instructionArea">
