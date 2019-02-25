@@ -34,7 +34,7 @@ class KeyboardSelect extends Component {
 			<div className="flagContainer">
 			<div className={flagClass1} onMouseDown={this.handleFlagClick}></div>
 			<div className={flagClass2} onMouseDown={this.handleFlagClick}></div>
-			<div className="noLayout" onMouseDown={this.keyboardOnOffClick}><br/>{hideOrShow}<br/>Keyboard</div>
+			<div className="noLayout" onMouseDown={this.keyboardOnOffClick}><br/>{hideOrShow}<br/></div>
 		
 		
 			</div>

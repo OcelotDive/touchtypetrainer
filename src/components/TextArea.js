@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import Lorem from 'react-lorem-component';
 class TextArea extends Component {
 	
-	
-
+	/* eslint-disable */
+	//concatenation of literals
 	
 	render() {
 		let words = shuffle(['ad','dolor', '@','Lorem', 'ipsum', 'sit']);
@@ -57,10 +57,10 @@ class TextArea extends Component {
 		
 		let lesson21;
 		if(this.props.flagSelect1 === 'usLayout flagHighlighted'){
-			lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi', "<\\3/g", "Hh/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#V", "0=kK;", "fS~|\|", 'P"hn#', "gm*,R5$", 'we%', "y@qG", "hir", "e,9", "#:d2", "wi1!2", "Z?82c", "/0G*", "H*(U)", "bnj)&*", "@'kj7", "TK>/", ">sw", ")JG76", "mcnvb74", "dui_=64", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "j8ˋ", "9!hlr", "JQWin", "^YT@h", "I7Pu", "U(!wzc", "tTˋ9ˋnZ"]);
+			lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi',  "Hh/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#V", "0=kK;", "fS~|\|", 'P"hn#', "gm*,R5$", 'we%', "y@qG", "hir", "e,9", "#:d2", "wi1!2", "Z?82c", "/0G*", "H*(U)", "bnj)&*", "@'kj7", "TK>/", ">sw", ")JG76", "mcnvb74", "dui_=64", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "j8t", "9!hlr", "JQWin", "^YT@h", "I7Pu", "U(!wzc", "tTˋ9ˋnZ"]);
 		}
 		else {
-			lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi', "<\\3/g", "Hh/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#¬V", "0=kK;", "fS~|\|", 'P"hn#', "gm*,R5$", 'we%', "y@qG¬", "hir", "e,9£", "#:d2", "wi1!2", "Z?82c", "/0G*", "H*(U)", "bnj)&*", "@'kj7", "TK>/", ">£sw", ")JG76", "mcnvb74", "dui_=64", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "¬j8ˋ", "9!hlr", "JQWin", "^YT@h", "I7Pu", "U(!wzc", "tTˋ9ˋnZ"]);	
+			lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi', "Hh/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#¬V", "0=kK;", "fS~|\|", 'P"hn#', "gm*,R5$", 'we%', "y@qG¬", "hir", "e,9£", "#:d2", "wi1!2", "Z?82c", "/0G*", "H*(U)", "bnj)&*", "@'kj7", "TK>/", ">£sw", ")JG76", "mcnvb74", "dui_=64", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "¬j8t", "9!hlr", "JQWin", "^YT@h", "I7Pu", "U(!wzc", "tTˋ9ˋnZ"]);	
 		}
 		
 		let textString;
@@ -269,7 +269,7 @@ class TextArea extends Component {
 			</div>
 			
 			</form>
-			<Lorem id="textGenerator" ref="text_content"  sentenceUpperBound="7" count="1" words={currentLesson} seed={seed}/>
+			<Lorem id="textGenerator" ref="text_content" mode="paragraphs" paragraphLowerBound={3} sentenceUpperBound={7}  count="1" words={currentLesson} seed={seed}/>
 			
 			</div>
 			

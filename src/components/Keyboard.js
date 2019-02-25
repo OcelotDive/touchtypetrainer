@@ -5,7 +5,7 @@ import Row2 from './Row2';
 import Row3 from './Row3';
 import Row4 from './Row4';
 import Row5 from './Row5';
-import Draggable, {DraggableCore} from 'react-draggable';
+import Draggable from 'react-draggable';
 class Keyboard extends Component {
 	
 	

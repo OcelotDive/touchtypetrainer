@@ -19,7 +19,7 @@ class LessonArea extends Component {
 	
 	render() {
 		
-		let lessonMain = this.refs.lessonMain;
+		
 		
 		let lessonAreaClass = this.props.lessonsActive ? 'lessonArea animated bounceInDown' : 'lessonArea animated bounceOutUp';
 		
@@ -131,7 +131,7 @@ class LessonArea extends Component {
 				
 				
 			
-			<div><h5 className="lessonHeader"></h5></div>
+			
 		
 		</section>
 		:
@@ -240,7 +240,7 @@ class LessonArea extends Component {
 				
 				
 			
-			<div><h5 className="lessonHeader"></h5></div>
+			
 		
 		</section>	
 		

@@ -52,7 +52,7 @@ class Lesson17Instructions extends Component {
 			<div style={{backgroundColor: "green"}}>{"\\"}</div>
 			<div style={{backgroundColor: "yellow"}}>{"<"}</div>
 			<div style={{backgroundColor: "yellow"}}>{">"}</div>
-			<div style={{backgroundColor: "yellow"}}>{"[ ] { } ' : ? \\"}</div>
+			<div style={{backgroundColor: "yellow"}}>{"[ ] { } ' : ?"}</div>
 			
 			
 			</div>
