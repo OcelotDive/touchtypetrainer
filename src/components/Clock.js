@@ -15,7 +15,7 @@ class Clock extends Component {
             let seconds = 0;
             let minutes = '0' + Math.floor(seconds / 60);
 
-            const intervalId = setInterval( () => {
+            const intervalId = setInterval(() => {
 
                 if (seconds < 10) seconds = '0' + seconds;
 
@@ -39,7 +39,7 @@ class Clock extends Component {
         //if timer started start else display 00:00
         setTimeout(() => {
 
-            if (this.props.timeOn === true) {
+            if (this.props.timeOn) {
 
                 let clock = document.getElementById('clock');
                 

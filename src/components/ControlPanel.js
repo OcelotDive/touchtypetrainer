@@ -39,7 +39,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-        classChange: (id) => {dispatch({type: 'PRESSED', id: id})},
 		lessonsMenu: () => {dispatch({type: 'LESSONSMENU'})},
 		startLesson: (lessonNumber,keys, code) => {dispatch({type: 'STARTLESSON', lessonNumber: lessonNumber, keys: keys, code: code})},
 		sendPanelOff: () => {dispatch({type: 'PANELOFF'})}
