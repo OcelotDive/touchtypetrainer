@@ -30,133 +30,15 @@ class InstructionArea extends Component {
 	let basics = "When beginning to type, your fingers should always rest on the third row of keys or the 'Home Row'. With the index fingers find the small raised bumps on the F and J keys. From here spread each finger of both hands outwards so the fingers are lightly resting on the Row 3 three keys as in the following chart. The left and right Thumbs are used to control the space bar. The most important rule is DON'T LOOK AT YOUR KEYBOARD. If you must look try to use the on screen keyboard to check which key is being struck. To start choose a lesson."
 	
 	
-	
-	
+	let lessonNumber = this.props.activeLesson;
+
 	
 		return (
 		this.props.activeLesson === 'Lesson1' ?
 			
 			
-			<Lesson1Instructions />
-			:
-		this.props.activeLesson === 'Lesson2' ?
-			
-			<Lesson2Instructions />
-			:
-		this.props.activeLesson === 'Lesson3' ?
-			
-			<Lesson3Instructions />
-			:
-			
-		this.props.activeLesson === 'Lesson4' ?	
-			
-			<Lesson4Instructions />
-			
-			
-			:
-			
-		this.props.activeLesson === 'Lesson5' ?	
-			
-			<Lesson5Instructions />
-			
-			
-			:
-			
-		this.props.activeLesson === 'Lesson6' ?	
-			
-			<Lesson6Instructions />
-			:
-			
-		this.props.activeLesson === 'Lesson7' ?	
-			
-			<Lesson7Instructions />
-			
-			
-			:
-			
-		this.props.activeLesson === 'Lesson8' ?	
-			
-			<Lesson8Instructions />
-			
-			:
-			
-		this.props.activeLesson === 'Lesson9' ?		
-			
-			<Lesson9Instructions />
-			
-			:
-			
-		this.props.activeLesson === 'Lesson10' ?
-			
-			<Lesson10Instructions />
-			
-			:
-			
-		this.props.activeLesson === 'Lesson11' ?
-			
-			<Lesson11Instructions />
-			
-			:
-		
-		this.props.activeLesson === 'Lesson12' ?
-			
-			<Lesson12Instructions />
-			
-			
-			:
-			
-		this.props.activeLesson === 'Lesson13' ?
-			
-			<Lesson13Instructions />
-			
-			:
-			
-		this.props.activeLesson === 'Lesson14' ?
-			
-			<Lesson14Instructions />
-			
-			:
-		
-		this.props.activeLesson === 'Lesson15' ?
-			
-			<Lesson15Instructions />
-			
-			:
-			
-		this.props.activeLesson === 'Lesson16' ?
-			
-			<Lesson16Instructions />
-			
-			:
-		
-		this.props.activeLesson === 'lesson17' ?
-			
-			<Lesson17Instructions />
-			
-			:
-		
-		this.props.activeLesson === 'Lesson18' ?
-			
-			<Lesson18Instructions />
-			
-			:
-			
-		this.props.activeLesson === 'Lesson19' ?
-			
-			<Lesson19Instructions />
-			
-			:	
-		
-		this.props.activeLesson === 'Lesson20' ?
-			
-			<Lesson20Instructions />
-			
-			:
-			
-		this.props.activeLesson === 'Lesson21' ?
-			
-			<Lesson21Instructions />
-			
+			<lessonNumber />
+	
 			:
 			
 			<div className="instructionArea">
@@ -207,11 +89,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-        sendString: (value) => {dispatch({type: 'SENDSTRING', value: value})},
-	
-	
-	
-	
+        
 	}	
 	
 	
@@ -220,4 +98,4 @@ const mapDispatchToProps = (dispatch) => {
 	
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(InstructionArea);
+export default connect(mapStateToProps)(InstructionArea);

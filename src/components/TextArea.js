@@ -106,96 +106,96 @@ class TextArea extends Component {
 		
 		//choose which array to use depending on lesson clicked
 		switch(this.props.activeLesson) {
-				case 'lesson1': 
+				case 'Lesson1': 
 					currentLesson = lesson1;
 					seed = Math.floor((Math.random() * 100) + 1)
 					break;
-			case 'lesson2':
+			case 'Lesson2':
 					currentLesson = lesson2;
 					seed = Math.floor((Math.random() * 100) + 1)
 					break;
-			case 'lesson3':
+			case 'Lesson3':
 					currentLesson = lesson3;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
-			case 'lesson4':
+			case 'Lesson4':
 					currentLesson = lesson4;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 				
-			case 'lesson5':
+			case 'Lesson5':
 					currentLesson = lesson5;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
-			case 'lesson6':
+			case 'Lesson6':
 					currentLesson = lesson6;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;	
-			case 'lesson7':
+			case 'Lesson7':
 					currentLesson = lesson7;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
-			case 'lesson8':
+			case 'Lesson8':
 					currentLesson = lesson8;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
-			case 'lesson9':
+			case 'Lesson9':
 					currentLesson = lesson9;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
-			case 'lesson10':
+			case 'Lesson10':
 					currentLesson = lesson10;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
-			case 'lesson11':
+			case 'Lesson11':
 					currentLesson = lesson11;
 					seed = Math.floor((Math.random() * 8) + 1)
 					break;
-			case 'lesson12':
+			case 'Lesson12':
 					currentLesson = lesson12;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
-			case 'lesson13':
+			case 'Lesson13':
 					currentLesson = lesson13;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
-			case 'lesson14':
+			case 'Lesson14':
 					currentLesson = lesson14;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			
-			case 'lesson15':
+			case 'Lesson15':
 					currentLesson = lesson15;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 				
-			case 'lesson16':
+			case 'Lesson16':
 					currentLesson = lesson16;
 					
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 				
-			case 'lesson17':
+			case 'Lesson17':
 					currentLesson = lesson17;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 				
-			case 'lesson18':
+			case 'Lesson18':
 					currentLesson = lesson18;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			
-			case 'lesson19':
+			case 'Lesson19':
 					currentLesson = lesson19;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 				
-			case 'lesson20':
+			case 'Lesson20':
 					currentLesson = lesson20;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;	
 			
-			case 'lesson21':
+			case 'Lesson21':
 					currentLesson = lesson21;
 					seed = Math.floor((Math.random() * 20) + 1)
 					break;

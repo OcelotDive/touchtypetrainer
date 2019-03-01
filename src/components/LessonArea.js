@@ -8,7 +8,7 @@ class LessonArea extends Component {
 	startLesson = (e) => {
 		
 		let lessonNumber = e.target.id;
-        alert(lessonNumber)
+      
 		
 		let keys = e.target.dataset.keys || 'Space';
 		keys = keys.split(',');
@@ -31,8 +31,6 @@ class LessonArea extends Component {
 			
 			<div id="lessonSetOne">
 			
-			
-		
 			<div className="lessonContainer" id="lessonDiv">
 			<h5 className="lessonTitle" id="Lesson1" data-keys="KeyF,KeyJ,KeyG,KeyH,Space" onClick={this.startLesson}>LESSON 1</h5>
 			<h4>f, j, g, h</h4></div>
