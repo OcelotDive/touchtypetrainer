@@ -26,12 +26,9 @@ class Lesson19Instructions extends Component {
 			<div className="col">
 			<div style={{backgroundColor: "green"}}>{'` ~ '}</div>
 			<div style={{backgroundColor: "yellow"}}>{'" _ - | + ='}</div>
-			
 			</div>
 			<div className="col">
-		
 			<div style={{backgroundColor: "aliceblue"}}>L5</div>
-
 			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 			</div>
 			</div>
@@ -48,12 +45,9 @@ class Lesson19Instructions extends Component {
 			<div className="col">
 			<div style={{backgroundColor: "green"}}>{'` ¬ |'}</div>
 			<div style={{backgroundColor: "yellow"}}>{'# @ ~ _ - + ='}</div>
-			
 			</div>
 			<div className="col">
-		
 			<div style={{backgroundColor: "aliceblue"}}>L5</div>
-
 			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 			</div>
 			</div>
@@ -69,9 +63,7 @@ const mapStateToProps = (state) => {
 		lessonKeys: state.lessonKeys,
 		flagSelect1: state.flagSelect1,
 		flagSelect2: state.flagSelect2
-		
-	
-		
+			
 	}
 }
 
@@ -79,15 +71,8 @@ const mapDispatchToProps = (dispatch) => {
 	return {
         sendString: (value) => {dispatch({type: 'SENDSTRING', value: value})},
 	
-	
-	
-	
 	}	
-	
-	
-	
-	
-	
+		
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Lesson19Instructions);

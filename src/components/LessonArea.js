@@ -129,17 +129,12 @@ class LessonArea extends Component {
 			</div>
 				
 				
-			
-			
-		
 		</section>
 		:
 			
 		<section className={lessonAreaClass} id="lessonPanel" ref="lessonMain">
 			
 			<div id="lessonSetOne">
-			
-			
 			
 			<div className="lessonContainer" id="lessonDiv">
 			<h5 className="lessonTitle" id="Lesson1" data-keys="KeyF,KeyJ,KeyG,KeyH,Space" onClick={this.startLesson}>LESSON 1</h5>

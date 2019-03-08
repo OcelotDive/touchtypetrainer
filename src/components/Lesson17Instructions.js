@@ -15,6 +15,7 @@ class Lesson17Instructions extends Component {
 
 	
 		return (
+            
 			this.props.flagSelect1 === 'usLayout flagHighlighted' ?
 			
 			<div className="instructionArea">
@@ -24,14 +25,10 @@ class Lesson17Instructions extends Component {
 			</article>
 			<div className="chart">
 			<div className="col">
-			
 			<div style={{backgroundColor: "yellow"}}>{"<"}</div>
 			<div style={{backgroundColor: "yellow"}}>{">"}</div>
 			<div style={{backgroundColor: "yellow"}}>{"[ ] { } ' : ? \\"}</div>
-			
-			
 			</div>
-			
 			<div className="col">
 			<div style={{backgroundColor: "aliceblue"}}>R3</div>
 			<div style={{backgroundColor: "aliceblue"}}>R4</div>
@@ -53,10 +50,7 @@ class Lesson17Instructions extends Component {
 			<div style={{backgroundColor: "yellow"}}>{"<"}</div>
 			<div style={{backgroundColor: "yellow"}}>{">"}</div>
 			<div style={{backgroundColor: "yellow"}}>{"[ ] { } ' : ?"}</div>
-			
-			
 			</div>
-			
 			<div className="col">
 			<div style={{backgroundColor: "aliceblue"}}>L5</div>
 			<div style={{backgroundColor: "aliceblue"}}>R3</div>
@@ -84,15 +78,7 @@ const mapDispatchToProps = (dispatch) => {
 	return {
         sendString: (value) => {dispatch({type: 'SENDSTRING', value: value})},
 	
-	
-	
-	
-	}	
-	
-	
-	
-	
-	
+	}		
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Lesson17Instructions);

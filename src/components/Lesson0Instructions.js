@@ -57,10 +57,7 @@ class Lesson0Instructions extends Component {
 const mapStateToProps = (state) => {
 	return {
 		activeLesson: state.activeLesson,
-		lessonKeys: state.lessonKeys
-		
-	
-		
+		lessonKeys: state.lessonKeys	
 	}
 }
 
@@ -68,15 +65,7 @@ const mapDispatchToProps = (dispatch) => {
 	return {
         sendString: (value) => {dispatch({type: 'SENDSTRING', value: value})},
 	
-	
-	
-	
-	}	
-	
-	
-	
-	
-	
+	}		
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Lesson0Instructions);

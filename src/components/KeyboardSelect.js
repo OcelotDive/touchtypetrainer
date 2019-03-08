@@ -6,19 +6,13 @@ class KeyboardSelect extends Component {
 	
 	handleFlagClick = (e) => {
 			let flag = e.target.className;
-			
-		
-		
 			this.props.flagClick(flag);
-		
-		
 		}
+    
 	
 	keyboardOnOffClick = (e) => {
-		
 		this.props.keyboardOnOff();
 	}
-	
 	
 	
 	render() {
@@ -35,13 +29,7 @@ class KeyboardSelect extends Component {
 			<div className={flagClass1} onMouseDown={this.handleFlagClick}></div>
 			<div className={flagClass2} onMouseDown={this.handleFlagClick}></div>
 			<div className="noLayout" onMouseDown={this.keyboardOnOffClick}><br/>{hideOrShow}<br/></div>
-		
-		
-			</div>
-			
-			
-					
-				
+			</div>		
 		</section>
 		
 		)

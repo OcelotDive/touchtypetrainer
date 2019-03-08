@@ -24,20 +24,16 @@ class Lesson1Instructions extends Component {
 			</article>
 			<div className="chart">
 			<div className="col">
-			
 			<div style={{backgroundColor: "green"}}>F</div>
 			<div style={{backgroundColor: "green"}}>G</div>
 			<div style={{backgroundColor: "yellow"}}>H</div>
 			<div style={{backgroundColor: "yellow"}}>J</div>
-			
 			</div>
 			<div className="col">
-		
 			<div style={{backgroundColor: "aliceblue"}}>L2</div>
 			<div style={{backgroundColor: "aliceblue"}}>L2</div>
 			<div style={{backgroundColor: "aliceblue"}}>R2</div>
 			<div style={{backgroundColor: "aliceblue"}}>R2</div>
-		
 			</div>
 			</div>
 			</div>
@@ -50,9 +46,7 @@ const mapStateToProps = (state) => {
 	return {
 		activeLesson: state.activeLesson,
 		lessonKeys: state.lessonKeys
-		
-	
-		
+			
 	}
 }
 
@@ -60,14 +54,7 @@ const mapDispatchToProps = (dispatch) => {
 	return {
         sendString: (value) => {dispatch({type: 'SENDSTRING', value: value})},
 	
-	
-	
-	
-	}	
-	
-	
-	
-	
+	}		
 	
 }
 

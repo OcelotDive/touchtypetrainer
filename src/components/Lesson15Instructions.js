@@ -24,19 +24,12 @@ class Lesson15Instructions extends Component {
 			</article>
 			<div className="chart">
 			<div className="col">
-			
 			<div style={{backgroundColor: "green"}}>ShiftLeft</div>
-			
 			<div style={{backgroundColor: "yellow"}}>ShiftRight</div>
-			
 			</div>
 			<div className="col">
-		
-			
 			<div style={{backgroundColor: "aliceblue"}}>L5</div>
-		
 			<div style={{backgroundColor: "aliceblue"}}>R5</div>
-		
 			</div>
 			</div>
 			</div>
@@ -48,9 +41,7 @@ const mapStateToProps = (state) => {
 	return {
 		activeLesson: state.activeLesson,
 		lessonKeys: state.lessonKeys
-		
-	
-		
+			
 	}
 }
 
@@ -58,15 +49,7 @@ const mapDispatchToProps = (dispatch) => {
 	return {
         sendString: (value) => {dispatch({type: 'SENDSTRING', value: value})},
 	
-	
-	
-	
-	}	
-	
-	
-	
-	
-	
+	}		
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Lesson15Instructions);

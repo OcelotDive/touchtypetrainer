@@ -36,7 +36,6 @@ class Lesson18Instructions extends Component {
 			<div style={{backgroundColor: "yellow"}}>)</div>
 			</div>
 			<div className="col">
-		
 			<div style={{backgroundColor: "aliceblue"}}>L5</div>
 			<div style={{backgroundColor: "aliceblue"}}>L4</div>
 			<div style={{backgroundColor: "aliceblue"}}>L3</div>
@@ -47,7 +46,6 @@ class Lesson18Instructions extends Component {
 			<div style={{backgroundColor: "aliceblue"}}>R3</div>
 			<div style={{backgroundColor: "aliceblue"}}>R4</div>
 			<div style={{backgroundColor: "aliceblue"}}>R5</div>
-		
 			</div>
 			</div>
 			</div>
@@ -73,7 +71,6 @@ class Lesson18Instructions extends Component {
 			<div style={{backgroundColor: "yellow"}}>)</div>
 			</div>
 			<div className="col">
-		
 			<div style={{backgroundColor: "aliceblue"}}>L5</div>
 			<div style={{backgroundColor: "aliceblue"}}>L4</div>
 			<div style={{backgroundColor: "aliceblue"}}>L3</div>
@@ -84,13 +81,10 @@ class Lesson18Instructions extends Component {
 			<div style={{backgroundColor: "aliceblue"}}>R3</div>
 			<div style={{backgroundColor: "aliceblue"}}>R4</div>
 			<div style={{backgroundColor: "aliceblue"}}>R5</div>
-		
 			</div>
 			</div>
 			</div>
 			
-			
-
 		)
 	}
 }
@@ -101,9 +95,7 @@ const mapStateToProps = (state) => {
 		lessonKeys: state.lessonKeys,
 		flagSelect1: state.flagSelect1,
 		flagSelect2: state.flagSelect2
-		
-	
-		
+			
 	}
 }
 
@@ -111,14 +103,7 @@ const mapDispatchToProps = (dispatch) => {
 	return {
         sendString: (value) => {dispatch({type: 'SENDSTRING', value: value})},
 	
-	
-	
-	
 	}	
-	
-	
-	
-	
 	
 }
 

@@ -36,7 +36,6 @@ class Lesson13Instructions extends Component {
 			<div style={{backgroundColor: "grey"}}>0</div>
 			</div>
 			<div className="col">
-		
 			<div style={{backgroundColor: "grey"}}>L5</div>
 			<div style={{backgroundColor: "grey"}}>L4</div>
 			<div style={{backgroundColor: "grey"}}>L3</div>
@@ -47,11 +46,7 @@ class Lesson13Instructions extends Component {
 			<div style={{backgroundColor: "aliceblue"}}>R3</div>
 			<div style={{backgroundColor: "grey"}}>R4</div>
 			<div style={{backgroundColor: "grey"}}>R5</div>
-		
 			</div>
-			
-		
-			
 			</div>
 			</div>
 		)
@@ -62,9 +57,7 @@ const mapStateToProps = (state) => {
 	return {
 		activeLesson: state.activeLesson,
 		lessonKeys: state.lessonKeys
-		
-	
-		
+			
 	}
 }
 
@@ -72,15 +65,7 @@ const mapDispatchToProps = (dispatch) => {
 	return {
         sendString: (value) => {dispatch({type: 'SENDSTRING', value: value})},
 	
-	
-	
-	
-	}	
-	
-	
-	
-	
-	
+	}		
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Lesson13Instructions);

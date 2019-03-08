@@ -27,10 +27,7 @@ class MistakesCounter extends Component {
 const mapStateToProps = (state) => {
 	return {
 		mistakesLength: state.mistakesLength
-		
-		
-	
-		
+			
 	}
 }
 
